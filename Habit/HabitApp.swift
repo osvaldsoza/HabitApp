@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-@main
-struct HabitApp: App {
+@main struct HabitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView(viewModel: SplashViewModel())
         }
     }
 }
