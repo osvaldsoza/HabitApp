@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		C73B0B412A54A065009BD1C3 /* HabitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73B0B402A54A065009BD1C3 /* HabitApp.swift */; };
-		C73B0B432A54A065009BD1C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73B0B422A54A065009BD1C3 /* ContentView.swift */; };
 		C73B0B452A54A069009BD1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73B0B442A54A068009BD1C3 /* Assets.xcassets */; };
 		C73B0B482A54A069009BD1C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73B0B472A54A069009BD1C3 /* Preview Assets.xcassets */; };
+		C73B0B532A54B650009BD1C3 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73B0B522A54B650009BD1C3 /* SplashView.swift */; };
+		C73B0B552A54B6C0009BD1C3 /* SplashUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73B0B542A54B6C0009BD1C3 /* SplashUIState.swift */; };
+		C73B0B582A54F57B009BD1C3 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73B0B572A54F57B009BD1C3 /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C73B0B3D2A54A065009BD1C3 /* Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73B0B402A54A065009BD1C3 /* HabitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitApp.swift; sourceTree = "<group>"; };
-		C73B0B422A54A065009BD1C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C73B0B442A54A068009BD1C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73B0B472A54A069009BD1C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C73B0B522A54B650009BD1C3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C73B0B542A54B6C0009BD1C3 /* SplashUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUIState.swift; sourceTree = "<group>"; };
+		C73B0B572A54F57B009BD1C3 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,8 @@
 		C73B0B3F2A54A065009BD1C3 /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				C73B0B4E2A54B607009BD1C3 /* Splash */,
 				C73B0B402A54A065009BD1C3 /* HabitApp.swift */,
-				C73B0B422A54A065009BD1C3 /* ContentView.swift */,
 				C73B0B442A54A068009BD1C3 /* Assets.xcassets */,
 				C73B0B462A54A069009BD1C3 /* Preview Content */,
 			);
@@ -65,6 +69,40 @@
 				C73B0B472A54A069009BD1C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C73B0B4E2A54B607009BD1C3 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C73B0B562A54F569009BD1C3 /* ViewModel */,
+				C73B0B502A54B61B009BD1C3 /* Model */,
+				C73B0B4F2A54B614009BD1C3 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C73B0B4F2A54B614009BD1C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C73B0B522A54B650009BD1C3 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C73B0B502A54B61B009BD1C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C73B0B542A54B6C0009BD1C3 /* SplashUIState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C73B0B562A54F569009BD1C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C73B0B572A54F57B009BD1C3 /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73B0B432A54A065009BD1C3 /* ContentView.swift in Sources */,
+				C73B0B552A54B6C0009BD1C3 /* SplashUIState.swift in Sources */,
 				C73B0B412A54A065009BD1C3 /* HabitApp.swift in Sources */,
+				C73B0B532A54B650009BD1C3 /* SplashView.swift in Sources */,
+				C73B0B582A54F57B009BD1C3 /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +345,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
